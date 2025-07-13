@@ -7,6 +7,7 @@ from langchain.schema import (
     SystemMessage,
     HumanMessage
 )
+from langchain_community import chat_models
 
 # 専門家ごとのシステムメッセージを取得する関数
 def get_system_message(role: str) -> str:
