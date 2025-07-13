@@ -1,9 +1,5 @@
-from dotenv import load_dotenv
 import os
 print("APIキー:", os.getenv("OPENAI_API_KEY"))
-
-# .envファイルの正しいパスを指定して読み込む
-load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
 
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
